@@ -1,0 +1,20 @@
+*{
+    background-color: blue;
+
+}
+.dictionary{
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+}
+.learn-more{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: aliceblue;
+}
+.icon-link-hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
