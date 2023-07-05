@@ -81,11 +81,11 @@ function createCard(word, meaning) {
   var newDiv = document.createElement('div');
   newDiv.classList.add('card');
   newDiv.style.width = "300px";
+  newDiv.style.marginTop = "50px";
   newDiv.style.height = "150px";
   newDiv.style.backgroundColor = "white";
   newDiv.style.color = "black";
   newDiv.style.padding = "10px";
-  //newDiv.style.padding = "10px";
   newDiv.style.left = "35%";
 
   var heading = document.createElement('h2');

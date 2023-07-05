@@ -1,100 +1,87 @@
 
-
-
-body{
-
-    background-image: url("caefc490605521.5e1c510e39942.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: Verdana,Arial, Helvetica,sans-serif;
-    justify-content: center;
-    padding: 100px;
-    align-items: center;
-    text-align: center;
-    font-weight: bolder;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.nav{
- 
+.navbar{
    display: flex;
    justify-content: flex-end;
+   width: 100%;
+   background-image: linear-gradient(#55a2b9, #979997);
 
-}
-.navbar{
-    margin-left: 10px;
-}
-
-main h1{
-    justify-content: center;
-    padding-right: 250px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    font-weight: bolder;
-    color: red;
+    
 }
 
-.book-img{
-    width: 100px;
-    height: 100px;
+.navbar button{
+    background-color: #cac7ff;
+    border-radius: 10px;
+}
+.navbar p{
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
 }
 
-#content h4{
-    margin-left: 20%;
-}
-
-.first-content{
+.main-container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    font-size: 160px;
-
 }
 
-#first-button{
-    width: 80px;
-    height: 50px;
-    margin-right: 10px;
+.search-bar{
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px) saturate(180%);
 }
 
-input{
-
-    width: 350px;
-    height: 60px;
-    border-radius: 0px;
-    color: black;
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 14px 20px;
+    font-size: 20px;
+    color: #cac7ff;
    
 }
-#wordsearch{
-   padding-left: 20px;
+
+::placeholder{
+    color: #cac7ff;
+}
+.search-bar button img{
+  width: 25px;
+
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #586295;
+    cursor: pointer;
 }
 
-.text-content{
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-}
 
-
-.text-content #search{
-    width: 50px;
-    height: 50px;
-    border-radius: 80px;
-    padding-left: 10%;
- }
-
-.btn-circle.btn-xl{
-    width: 50px;
-    height: 50px;
-    padding: 8px 12px;
-    border-radius: 35px;
-    font-size: 24px;
-    line-height: 1.33;
-}
-
+/* second page */
 .container{
     display: flex;
     justify-content: center;
@@ -123,16 +110,17 @@ input{
     color: black;
     text-shadow: 1px 1px #bbb;
     text-align: center;
-  }
+}
+
 #card-container
-  {
+{
     display: flex;
     justify-content: center;
     padding-top: 10px 10px;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-  }
+}
 
   .card{
     height: 200px;

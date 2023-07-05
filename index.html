@@ -11,39 +11,29 @@
 </head>
 
 <body>
-    <script src="index.js"></script>
-    <section class="nav">
-        <nav class="navbar">
-            <button id="first-button" class="btn  btn-dark btn-large" onclick="historyPage()">History</button>
-        </nav>
-    </section>
+    <nav class="navbar">
+        <p>Welcome!</p>
+        <button id="first-button"  onclick="historyPage()">History</button>
+    </nav>
+    
+    <div class="main-container">
+       
 
+        <form id="content" class="search-bar">
+            <input type="text" placeholder="Start typing any word or phrase" id="wordsearch">
 
-    <main>
-        <header>
-            <!-- <h1> My Dictionary Website</h1> -->
-        </header>
-        <section class="first-content">
-            <img class="book-img" src="downloadks.png">
-            <h3>My DICTIONARY </h3>
+            <button class="btnSubmit" id="searching">
+                <img id="search" src="/images/search.png" alt="image">
+            </button>
+        </form>
+       
+       
 
-
-          
-        </section>
-        <section class="text-content">
-            <form id="content">
-                <!-- <h4>Learn it forever</h4> -->
-                <input type="text" placeholder="Start typing any word or phrase" id="wordsearch">
-
-                <button class="btn btn-light btn-circle btn-xl" id="searching">
-                    <img id="search" src="download223.png" alt="image">
-                </button>
-            </form>
-        </section>
         <section>
             <div id="container"></div>
         </section>
-    </main>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
