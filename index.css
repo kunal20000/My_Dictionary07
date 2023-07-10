@@ -16,15 +16,17 @@
 }
 
 .navbar button{
-    background-color: #cac7ff;
+   
     border-radius: 10px;
+    margin-right: 10px;
 }
 .navbar p{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     float: left;
     color: white;
     padding-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 
@@ -40,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .search-bar{
@@ -81,6 +84,7 @@
 }
 
 
+
 /* second page */
 .container{
     display: flex;
@@ -94,6 +98,8 @@
 
 .container h1{
     font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
 }
 
 #second-button {
