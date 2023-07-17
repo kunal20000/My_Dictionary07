@@ -93,7 +93,7 @@ function createCard(word, meaning) {
   
 
   var heading = document.createElement('h2');
-  heading.textContent = "Word of the day: " + word;
+  heading.textContent = "Word: " + word;
 
   var details = document.createElement("div");
   details.classList.add("details");
