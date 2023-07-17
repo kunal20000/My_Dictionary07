@@ -80,20 +80,21 @@ function createCard(word, meaning) {
   var container = document.getElementById('container');
   var newDiv = document.createElement('div');
   newDiv.classList.add('card');
-  newDiv.style.display = "flex";
-  newDiv.style.justifyContent = "center";
-  newDiv.style.alignItems = "center";
+  // newDiv.style.display = "flex";
+  // newDiv.style.justifyContent = "flex-start";
+  // newDiv.style.alignItems = "center";
   
-  newDiv.style.width = "300px";
+  newDiv.style.width = "100%";
   newDiv.style.marginTop = "50px";
-  newDiv.style.height = "150px";
-  newDiv.style.backgroundColor = "yellow";
+  newDiv.style.height = "200px";
+  newDiv.style.backgroundColor = "white";
   newDiv.style.color = "black";
   newDiv.style.padding = "10px";
   
 
   var heading = document.createElement('h2');
-  heading.textContent = "Word: " + word;
+  heading.textContent = "word: "+ word;
+  // heading.style = "bold";
 
   var details = document.createElement("div");
   details.classList.add("details");
@@ -102,7 +103,7 @@ function createCard(word, meaning) {
   details.style.fontSize = "14px";
 
   var paragraph = document.createElement('p');
-  paragraph.textContent = meaning;
+  paragraph.textContent = "meaning: "+ meaning;
 
   details.appendChild(heading);
   details.appendChild(paragraph);
