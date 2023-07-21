@@ -17,13 +17,20 @@ function homePage() {
         newDiv.classList.add('card');
         newDiv.style.width = "350px";
         newDiv.style.height = "220px";
-        newDiv.style.backgroundColor = "rgb(169, 169, 169)";
-        newDiv.style.color = "black";
+        newDiv.style.backgroundColor = "blue";
         newDiv.style.padding = "10px";
         newDiv.style.position = "relative";
 
+        // var buttonAllClear = document.createElement("button");
+        // buttonAllClear.style.height = "50px";
+        // buttonAllClear.style.width  = "50px";
+        // buttonAllClear.style.backgroundColor = 'green';
+
         var heading = document.createElement('h2');
-        heading.textContent = "Word: " + card.word;
+        heading.style.color = "white";
+        heading.style.fontWeight = "bold";
+        heading.style.fontWeight = "30px";
+        heading.textContent = "🔊 " + card.word;
 
         var details = document.createElement("div");
         details.classList.add("details");
@@ -32,11 +39,13 @@ function homePage() {
         details.style.fontSize = "5px";
 
         var paragraph = document.createElement('p');
-        paragraph.textContent = card.meaning;
+        paragraph.style.color = "white";
+        paragraph.textContent = "📢 " +card.meaning;
 
         //var deleteButton = document.createElement("button");
         var imageDeleteButton =document.createElement('img');
-        imageDeleteButton.src='images11.png';
+        imageDeleteButton.classList.add = "imgMain"
+        imageDeleteButton.src='./trash-delete-bin.svg';
         imageDeleteButton.style.width="40px";
         imageDeleteButton.style.height="40px";
         imageDeleteButton.style.position = "absolute";

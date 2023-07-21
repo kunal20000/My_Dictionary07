@@ -4,6 +4,11 @@ function historyPage() {
     window.location.href = "index1.html";
   }
 
+  document.body.style.backgroundImage = 'url("./back2image.jpg")';
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
+  // document.body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/37/60/aLKFHY.jpg')";
+
 document.addEventListener("DOMContentLoaded", function() {
   var form = document.getElementById("content");
   var userInput = document.getElementById("wordsearch");
@@ -80,30 +85,30 @@ function createCard(word, meaning) {
   var container = document.getElementById('container');
   var newDiv = document.createElement('div');
   newDiv.classList.add('card');
-  // newDiv.style.display = "flex";
-  // newDiv.style.justifyContent = "flex-start";
-  // newDiv.style.alignItems = "center";
   
   newDiv.style.width = "100%";
   newDiv.style.marginTop = "50px";
-  newDiv.style.height = "200px";
-  newDiv.style.backgroundColor = "white";
-  newDiv.style.color = "black";
+  newDiv.style.height = "100%";
+  newDiv.style.backgroundColor = "blue";
+  newDiv.style.color = "white";
   newDiv.style.padding = "10px";
+  newDiv.style.borderTopLeftRadius = "15px";
   
 
   var heading = document.createElement('h2');
-  heading.textContent = "word: "+ word;
-  // heading.style = "bold";
+  heading.style.color = "white";
+  heading.textContent = "🔊 "+ word;
+  
 
   var details = document.createElement("div");
   details.classList.add("details");
   details.style.padding = "10px";
-  details.style.fontFamily = "Verdana";
+  details.style.fontFamily = "verdana";
   details.style.fontSize = "14px";
 
   var paragraph = document.createElement('p');
-  paragraph.textContent = "meaning: "+ meaning;
+  paragraph.style.color = "white";
+  paragraph.textContent = "📢 "+  meaning;
 
   details.appendChild(heading);
   details.appendChild(paragraph);
