@@ -30,12 +30,14 @@
     margin-right: 10px;
 }
 
-.btnCreateAccount{
+/* .btnCreateAccount{
    border-radius: 10px;
    padding: 6px;
-   background-color: darkslategray;
+   background-color: yellow;
    border: none;
-}
+} */
+
+
 .main-container{
     width: 100%;
     min-height: 100vh;
@@ -66,6 +68,7 @@
 
 .search-bar input{
     background: transparent;
+   
     flex: 1;
     border: 0;
     outline: none;
@@ -92,7 +95,6 @@
 }
 
 
-
 /* second page */
 .container{
     display: flex;
@@ -107,19 +109,23 @@
 
 .container h1{
     font-size: 40px;
-
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
 
 }
 
 #second-button {
-    /* margin-top: 50px; */
+  
     width: 100px;
     height: 40px;
     font-size: 20px;
     margin-left: 50px;
 
+}
+#third-button{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
 }
 
 .details {

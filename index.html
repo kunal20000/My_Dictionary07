@@ -9,10 +9,12 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Dictionary... </title>
 </head>
@@ -25,8 +27,8 @@
        
           <h2></i>My<i style="color:rgb(255, 71, 148)" class="fa-solid fa-explosion"></i> <span>Dictionary</span></h2>
           
-          <div>
-          <button class="btnCreateAccount">Create Account  <i class="fa-regular fa-user"></i></button>
+        <div class="btnAll">
+          <!-- <button class="btnCreateAccount"><i class="fa-regular fa-user"></i></button> -->
           <button class="btn btn-outline-danger d-flex justify-content-end " onclick="historyPage()">History</button>
         </div>
         
@@ -44,12 +46,14 @@
                 <img id="search" src="images/search.png" alt="image">
             </button>
         </form>
-   
+         
 
 
         <section>
             <div id="container"></div>
         </section>
+
+        
     </div>
    
     <script src="index.js"></script>

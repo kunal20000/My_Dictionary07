@@ -4,9 +4,10 @@ function historyPage() {
     window.location.href = "index1.html";
   }
 
-  document.body.style.backgroundImage = 'url("./back2image.jpg")';
+  document.body.style.backgroundImage = 'url("./backgroundPhoto.jpg")';
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+ 
   // document.body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/37/60/aLKFHY.jpg')";
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -98,6 +99,7 @@ function createCard(word, meaning) {
   var heading = document.createElement('h2');
   heading.style.color = "white";
   heading.textContent = "🔊 "+ word;
+  // var btnVoice = document.createElement("button")
   
 
   var details = document.createElement("div");

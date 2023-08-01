@@ -59,6 +59,13 @@ function homePage() {
           localStorage.setItem("cards", JSON.stringify(parsedCards));
           cardContainer.removeChild(newDiv);
         });
+        
+        const deleteButtonAll = document.getElementById("third-button");
+        deleteButtonAll.addEventListener('click', function(){
+          parsedCards.splice(1);
+          cardContainer.remove();
+          
+        })
 
         details.appendChild(heading);
         details.appendChild(paragraph);
