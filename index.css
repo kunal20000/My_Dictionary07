@@ -30,12 +30,7 @@
     margin-right: 10px;
 }
 
-/* .btnCreateAccount{
-   border-radius: 10px;
-   padding: 6px;
-   background-color: yellow;
-   border: none;
-} */
+
 
 
 .main-container{
@@ -43,7 +38,7 @@
     min-height: 100vh;
     padding: 5%;
 
-    /* background-image: url("./back2image.jpg");     */
+        
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -126,6 +121,7 @@
     width: 100px;
     height: 40px;
     font-size: 20px;
+   
 }
 
 .details {

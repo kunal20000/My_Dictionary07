@@ -8,7 +8,6 @@ function historyPage() {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
  
-  // document.body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/37/60/aLKFHY.jpg')";
 
 document.addEventListener("DOMContentLoaded", function() {
   var form = document.getElementById("content");
@@ -66,9 +65,11 @@ function retrieveMeaning(word) {
   fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + word)
     .then(response=>response.json())
     .then(data => {
+     
       var meaning = data[0].meanings[0].definitions[0].definition;
       createCard(word,meaning);
       var cardData = {
+        
         word: word,
         meaning: meaning
     };
@@ -82,6 +83,7 @@ function retrieveMeaning(word) {
       window.alert("Please give me a correct word!!");
     });
 }
+
 function createCard(word, meaning) {
   var container = document.getElementById('container');
   var newDiv = document.createElement('div');
@@ -95,13 +97,12 @@ function createCard(word, meaning) {
   newDiv.style.padding = "10px";
   newDiv.style.borderTopLeftRadius = "15px";
   
-
+ 
+  
   var heading = document.createElement('h2');
   heading.style.color = "white";
   heading.textContent = "🔊 "+ word;
-  // var btnVoice = document.createElement("button")
   
-
   var details = document.createElement("div");
   details.classList.add("details");
   details.style.padding = "10px";
@@ -112,6 +113,7 @@ function createCard(word, meaning) {
   paragraph.style.color = "white";
   paragraph.textContent = "📢 "+  meaning;
 
+ 
   details.appendChild(heading);
   details.appendChild(paragraph);
   newDiv.appendChild(details);

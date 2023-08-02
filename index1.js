@@ -2,9 +2,10 @@ function homePage() {
 
     window.location.href = "index.html";
   }
+   
+  
 
-
-
+ document.body.style.backgroundImage = 
   document.addEventListener("DOMContentLoaded", function() {
     var cards = localStorage.getItem("cards");
     var cardContainer = document.getElementById("card-container");
@@ -53,23 +54,29 @@ function homePage() {
         imageDeleteButton.style.right = "10px";
         imageDeleteButton.style.cursor = "pointer";
 
-
+       
        imageDeleteButton.addEventListener("click", function() {
           parsedCards.splice(index, 1);
           localStorage.setItem("cards", JSON.stringify(parsedCards));
           cardContainer.removeChild(newDiv);
         });
+
         
+
         const deleteButtonAll = document.getElementById("third-button");
         deleteButtonAll.addEventListener('click', function(){
-          parsedCards.splice(1);
-          cardContainer.remove();
-          
-        })
+           
+            parsedCards.splice(0);
+            cardContainer.remove(parsedCards);
+            localStorage.clear();
+            
+           })
+
 
         details.appendChild(heading);
         details.appendChild(paragraph);
         details.appendChild(imageDeleteButton);
+        
         newDiv.appendChild(details);
         cardContainer.appendChild(newDiv);
       });
