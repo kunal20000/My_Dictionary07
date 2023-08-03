@@ -97,8 +97,14 @@ function createCard(word, meaning) {
   newDiv.style.padding = "10px";
   newDiv.style.borderTopLeftRadius = "15px";
   
- 
-  
+ //🔊
+  // var buttonAudio = document.createElement('button');
+  // buttonAudio.style.width = '20px';
+  // buttonAudio.style.height = "20px";
+  // buttonAudio.style.backgroundImage = 'url("./volume-up.svg")';
+  // // buttonAudio.style.border = 'none';
+  // buttonAudio.style.backgroundRepeat = 'no-repeat';
+
   var heading = document.createElement('h2');
   heading.style.color = "white";
   heading.textContent = "🔊 "+ word;
@@ -115,6 +121,7 @@ function createCard(word, meaning) {
 
  
   details.appendChild(heading);
+  // details.appendChild(buttonAudio);
   details.appendChild(paragraph);
   newDiv.appendChild(details);
   container.appendChild(newDiv);

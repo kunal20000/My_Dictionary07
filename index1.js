@@ -5,7 +5,10 @@ function homePage() {
    
   
 
- document.body.style.backgroundImage = 
+  document.body.style.backgroundImage = 'url("./images (1).png")';
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
+
   document.addEventListener("DOMContentLoaded", function() {
     var cards = localStorage.getItem("cards");
     var cardContainer = document.getElementById("card-container");
@@ -69,6 +72,7 @@ function homePage() {
             parsedCards.splice(0);
             cardContainer.remove(parsedCards);
             localStorage.clear();
+           
             
            })
 
