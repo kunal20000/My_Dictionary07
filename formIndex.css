@@ -42,18 +42,18 @@
     padding: 5px;
 }
 
-.btnCreate {
+/* .btnCreate {
     padding: 10px;
     background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
-.btnCreate:hover {
+/* .btnCreate:hover {
     background-color: #0056b3;
-}
+} */
 
 #closeButton {
     margin-top: 7px;

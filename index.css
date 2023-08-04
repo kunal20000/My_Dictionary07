@@ -68,7 +68,6 @@
 
 .search-bar input{
     background: transparent;
-   
     flex: 1;
     border: 0;
     outline: none;
@@ -164,23 +163,11 @@
     flex-wrap: wrap;
     align-items: center;
     cursor: pointer;
-    
-
-
 }
-
-
 .card:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
-
-/* .card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 10px;
-} */
-
 h2 {
     font-size: 30px;
     margin-bottom: 5px;
