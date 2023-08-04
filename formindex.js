@@ -7,6 +7,7 @@ const overlay = document.getElementById('overlay');
 const formInputSearchBar  = document.getElementById("content");
 const containerBtn = document.getElementById("container");
 
+
 loginButton.addEventListener('click', function(){
     containerBtn.style.display = 'none';
 })
@@ -28,9 +29,5 @@ closeButton.addEventListener('click', function() {
     overlay.style.display = 'none';
 });
 
-createAccountButton.addEventListener('click', function() {
-    
-    
-    
-    alert('Accounted created!!');
-});
+
+

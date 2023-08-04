@@ -29,19 +29,19 @@
           <h2></i>My<i style="color:rgb(255, 71, 148)" class="fa-solid fa-explosion"></i> <span>Dictionary</span></h2>
           
         <div class="btnAll">
-          <button class="btn btn-outline-danger" id="loginButton">Create Account</button>
-          <button class="btn btn-outline-danger d-flex justify-content-end " onclick="historyPage()">History</button>
+          <button class="btn btn-primary" id="loginButton"><i class="fa-solid fa-user"></i> Login</button>
+          <button class="btn btn-primary" onclick="historyPage()">History</button>
 
           <div class="overlay" id="overlay">
             <div class="popup" id="popup">
                 <h2 class="loginCreate">Login</h2>
                 <form class="formClass">
                     <label for="username" class="labelFor">Username:</label>
-                    <input class="inputFor" type="text" id="username" placeholder="username" required>
+                    <input class="inputForUserName" type="text" id="username" placeholder="username" autocomplete="off" required>
                     <label for="password" class="labelFor">Password:</label>
-                    <input class="inputFor" type="password" id="password" required>
+                    <input class="inputForPassword" type="password" id="password" placeholder="password" autocomplete="off" required>
                     <button type="submit" class="labelFor" id="login">Login</button>
-                    <button class="btnCreate" type="button" id="createAccount">Create Account</button>
+                   
                 </form>
                 <button id="closeButton">Close</button>
             </div>
@@ -58,7 +58,7 @@
         
     
         <form id="content" class="search-bar">
-            <input type="text" placeholder="Start typing any word or phrase...💬" id="wordsearch">
+            <input type="text" placeholder="start typing any word...✏️" id="wordsearch">
      
             <button class="btnSubmit" id="searching">
                 <img id="search" src="images/search.png" alt="image">
@@ -75,6 +75,79 @@
 
         
     </div>
+    <footer class="text-center text-white">
+       
+        <div class="container pt-4">
+         
+          <section class="mb-4">
+            
+            <a
+              style="background-color: hsla(0, 0%, 98%, 0.2)"
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.hackerrank.com/kunalsapate2000?hr_r=1"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa-brands fa-hackerrank"></i
+            ></a>
+      
+           
+            <a
+              style="background-color: hsla(0, 0%, 98%, 0.2)"
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://twitter.com/KunalSapate2524"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+        
+            <a
+              style="background-color: hsla(0, 0%, 98%, 0.2)"
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://mail.google.com/mail/u/0/#all?compose=new"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa-solid fa-envelope"></i>
+            </a>
+      
+       
+            <a
+              style="background-color: hsla(0, 0%, 98%, 0.2)"
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.instagram.com/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+           
+            <a
+              style="background-color: hsla(0, 0%, 98%, 0.2)"
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B%2FjXNncX6SnWYtlAhiZNu5Q%3D%3D"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          
+            <a
+              style="background-color: hsla(0, 0%, 98%, 0.2)"
+              class="btn btn-link btn-floating btn-lg text-dark  m-1"
+              href="https://github.com/kunal20000"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+         
+        </div>
+        
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright Reserved :
+          <a class="text-white" href="https://en.wikipedia.org/wiki/Dictionary">Dictionary.com</a>
+        </div>
+        
+      </footer>
    
     <script src="index.js"></script>
     <script src="formindex.js"></script>

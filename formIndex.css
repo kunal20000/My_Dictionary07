@@ -33,8 +33,11 @@
 .labelFor {
     margin-bottom: 5px;
 }
-
-.inputFor{
+.inputForUsername{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.inputForPassword{
     margin-bottom: 10px;
     padding: 5px;
 }
