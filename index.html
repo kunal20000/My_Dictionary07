@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for main page css and history and card -->
     <link rel="stylesheet" href="index.css">
+
+     <!--for pop up form css  -->
     <link rel="stylesheet" href="formIndex.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
@@ -26,11 +30,11 @@
     
      <nav class="navbar">
        
-          <h2></i>My<i style="color:rgb(255, 71, 148)" class="fa-solid fa-explosion"></i> <span>Dictionary</span></h2>
+          <h2>My<i style="color: red" class="fa-solid fa-explosion"></i> <span>Dictionary</span></h2>
           
         <div class="btnAll">
-          <button class="btn btn-primary" id="loginButton"><i class="fa-solid fa-user"></i> Login</button>
-          <button class="btn btn-primary" onclick="historyPage()">History</button>
+          <button class="btn btn-secondary" id="loginButton"><i class="fa-solid fa-user"></i> Login</button>
+          <button class="btn btn-secondary" onclick="historyPage()">History</button>
 
           <div class="overlay" id="overlay">
             <div class="popup" id="popup">
@@ -44,15 +48,14 @@
                    
                 </form>
                 <button id="closeButton">Close</button>
-            </div>
+          </div>
         </div>
           
 
     </div>
         
   </nav>
- 
-
+  
     
     <div class="main-container">
         
@@ -78,64 +81,46 @@
     <footer class="text-center text-white">
        
         <div class="container pt-4">
-         
-          <section class="mb-4">
-            
-            <a
-              style="background-color: hsla(0, 0%, 98%, 0.2)"
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.hackerrank.com/kunalsapate2000?hr_r=1"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fa-brands fa-hackerrank"></i
+         <section class="mb-4">
+            <a style="background-color: hsla(0, 0%, 98%, 0.2)" class="btn btn-link btn-floating btn-lg text-white  m-1" class="colorChange"
+              href="https://www.hackerrank.com/kunalsapate2000?hr_r=1"><i class="fa-brands fa-hackerrank"></i
             ></a>
       
            
             <a
-              style="background-color: hsla(0, 0%, 98%, 0.2)"
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              style="background-color: hsla(0, 0%, 98%, 0.2)" class="btn btn-link btn-floating btn-lg text-white m-1"
               href="https://twitter.com/KunalSapate2524"
-              role="button"
-              data-mdb-ripple-color="dark"
               ><i class="fab fa-twitter"></i
             ></a>
       
         
             <a
               style="background-color: hsla(0, 0%, 98%, 0.2)"
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              class="btn btn-link btn-floating btn-lg text-white m-1"
               href="https://mail.google.com/mail/u/0/#all?compose=new"
-              role="button"
-              data-mdb-ripple-color="dark"
               ><i class="fa-solid fa-envelope"></i>
             </a>
       
        
             <a
               style="background-color: hsla(0, 0%, 98%, 0.2)"
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              class="btn btn-link btn-floating btn-lg text-white m-1"
               href="https://www.instagram.com/"
-              role="button"
-              data-mdb-ripple-color="dark"
               ><i class="fab fa-instagram"></i
             ></a>
       
            
             <a
               style="background-color: hsla(0, 0%, 98%, 0.2)"
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B%2FjXNncX6SnWYtlAhiZNu5Q%3D%3D"
-              role="button"
-              data-mdb-ripple-color="dark"
+              class="btn btn-link btn-floating btn-lg text-white  m-1"
+              href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B%2FjXNncX6SnWYtlAhiZNu5Q%3D%3D" 
               ><i class="fab fa-linkedin"></i
             ></a>
           
             <a
               style="background-color: hsla(0, 0%, 98%, 0.2)"
-              class="btn btn-link btn-floating btn-lg text-dark  m-1"
+              class="btn btn-link btn-floating btn-lg text-white m-1"
               href="https://github.com/kunal20000"
-              role="button"
-              data-mdb-ripple-color="dark"
               ><i class="fab fa-github"></i
             ></a>
           </section>
@@ -148,8 +133,11 @@
         </div>
         
       </footer>
-   
+
+     <!-- for meaning of card -->
     <script src="index.js"></script>
+
+    <!-- for pop up showing -->
     <script src="formindex.js"></script>
 </body>
 

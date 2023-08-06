@@ -34,15 +34,16 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 
-  userInput.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
+  userInput.addEventListener("keypress", function(event) 
+  {
+    if (event.key === "Enter") 
+    {
       event.preventDefault();
 
       var word = userInput.value;
-      if(word=="")
+      if(word == "")
       {
         var hideButton = document.getElementById("container");
-
         hideButton.style.display = "none";
       }
       else
@@ -50,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
         var hideButton = document.getElementById("container");
 
         hideButton.innerHTML = "";
-
         retrieveMeaning(word);
         userInput.value=" ";
 
@@ -63,7 +63,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function retrieveMeaning(word) {
   fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + word)
+   
     .then(response=>response.json())
+    // responce object
     .then(data => {
      
       var meaning = data[0].meanings[0].definitions[0].definition;
@@ -75,10 +77,11 @@ function retrieveMeaning(word) {
     };
 
     var existingCards = localStorage.getItem("cards");
+
     var cards = existingCards ? JSON.parse(existingCards) : [];
     cards.push(cardData);
     localStorage.setItem("cards", JSON.stringify(cards));
-    })
+  })
     .catch(error => {
       window.alert("Please give me a correct word!!");
     });
@@ -115,7 +118,6 @@ function createCard(word, meaning) {
 
  
   details.appendChild(heading);
-  // details.appendChild(buttonAudio);
   details.appendChild(paragraph);
   newDiv.appendChild(details);
   container.appendChild(newDiv);

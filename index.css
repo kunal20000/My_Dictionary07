@@ -9,6 +9,7 @@
 
 .navbar{
     text-align: center;
+    
 }
 
 .navbar h2{
@@ -21,20 +22,26 @@
     margin-left: 10px;
     gap: 10px;
     color: aqua;
+    text-decoration: underline;
     
 }
 
+
 .navbar span{
-    color: yellow;
+    color: greenyellow;
+    font-weight: 700;
+  
     text-decoration: underline;
 }
 
-.navbar button{
+.navbar button:hover{
     margin-right: 10px;
+    background-color: aquamarine;
 }
 
 .btnAll{
     display: flex;
+    gap: 10px;
 }
 
 
@@ -65,6 +72,9 @@
   padding: 10px 20px;
   backdrop-filter: blur(4px) saturate(180%);
 }
+.colorChange:hover{
+    background-color: white;
+}
 
 .search-bar input{
     background: transparent;
@@ -78,7 +88,7 @@
 }
 
 ::placeholder{
-    color: gray;
+    color: black;
 }
 .search-bar button img{
   width: 25px;
@@ -89,12 +99,17 @@
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background: #586295;
+    background: blue;
     cursor: pointer;
 }
 
 @media screen and (max-width: 576px){
-     
+    .btnAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 120px;
+    }
    
 }
 
