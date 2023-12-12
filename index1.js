@@ -9,7 +9,8 @@ function homePage() {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
 
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() 
+  {
     var cards = localStorage.getItem("cards");
     var cardContainer = document.getElementById("card-container");
 
@@ -25,7 +26,7 @@ function homePage() {
         newDiv.style.backgroundColor = "blue";
         newDiv.style.padding = "10px";
         newDiv.style.position = "relative";
-
+        // media query
         var heading = document.createElement('h2');
         heading.style.color = "white";
         heading.style.fontWeight = "bold";
@@ -81,3 +82,26 @@ function homePage() {
       });
     }
   });
+
+  var style = document.createElement('style');
+style.textContent = `
+  /* Default styles for the card class */
+  .card {
+    width: 350px;
+    height: 220px;
+    background-color: blue;
+    padding: 10px;
+    position: relative;
+  }
+
+  /* Media query for screens with a max-width of 600px */
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 300px; /* Set the width to 100% for smaller screens */
+      height: 180px;
+      
+    }
+  }
+`;
+
+// Append the style block to the hea

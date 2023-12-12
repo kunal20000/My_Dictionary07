@@ -110,6 +110,10 @@
         align-items: center;
         margin-left: 120px;
     }
+    .search-bar{
+        width: auto;
+        
+    }
    
 }
 
@@ -191,4 +195,24 @@ h2 {
 p {
     font-size: 14px;
     margin-bottom: 0;
+}
+@media screen and (max-width:768px){
+    .container h1{
+        font-size: 25px;
+    }
+    #second-button{
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+
+    #third-button{
+        height: 30px;
+        font-size: 15px;
+    }
+    .card{
+        height: 170px;
+        width: 170px;
+    }
 }
